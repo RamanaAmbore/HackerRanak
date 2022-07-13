@@ -1,0 +1,13 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/py-collections-ordereddict/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import OrderedDict
+
+o_dict = OrderedDict()
+lst = [input().rpartition(' ') for _ in range(int(input()))]
+
+for (key,_,val) in lst:
+      if key in o_dict: o_dict[key]+=int(val)
+      else: o_dict[key]= int(val)
+
+for i,j in o_dict.items(): print(f'{i} {j}')
