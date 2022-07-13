@@ -1,0 +1,6 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/py-set-symmetric-difference-operation/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+m,a =input(), set(input().split())
+n, b =input(), set(input().split())
+print(len(a^b))
