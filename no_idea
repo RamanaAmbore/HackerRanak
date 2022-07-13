@@ -1,0 +1,8 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/no-idea/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,m=map(int,(input().split()))
+lst_n = list(map(int,input().split()))
+lst_a = set(map(int,input().split()))
+lst_b = set(map(int,input().split()))
+print(sum(map(lambda x: (x in lst_a) -(x in lst_b), lst_n)))
