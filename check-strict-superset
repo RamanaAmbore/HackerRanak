@@ -1,0 +1,5 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/py-check-strict-superset/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+sc = set(input().split())
+print (all(sc > set(input().split()) for _ in range(int(input()))))
