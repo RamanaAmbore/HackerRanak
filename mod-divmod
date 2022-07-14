@@ -1,0 +1,5 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/python-mod-divmod/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+a,b=int(input()), int(input())
+print(f'{a//b}\n{a%b}\n{divmod(a,b)}')
