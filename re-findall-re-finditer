@@ -1,0 +1,10 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/re-findall-re-finditer/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+v='aeiou'
+c='bcdfghjklmnpqrstvwxyz'
+regx = r"(?<=[%s])[%s]{2,}(?=[%s])" % (c,v,c)
+strs = re.findall(regx, input(),flags=re.I)
+
+print(*(strs if strs else [-1]), sep='\n')
