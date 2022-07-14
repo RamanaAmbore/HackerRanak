@@ -1,0 +1,7 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/zipped/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,x=map(int,input().split())
+s=[map(float,(input().split())) for _ in range(x)]
+
+print(*map(lambda i: sum(i)/x, zip(*s)),sep='\n')
