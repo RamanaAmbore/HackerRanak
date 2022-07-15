@@ -1,0 +1,6 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/py-check-subset/problem
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+for _ in range(int(input())):
+    _, ss=input(), set(input().split())
+    _,bs= input(),  set(input().split())
+    print (ss<bs)
