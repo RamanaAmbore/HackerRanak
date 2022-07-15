@@ -1,0 +1,4 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/python-sort-sort/problem
+
+    k = int(input()) 
+    for i in sorted(arr,key=lambda x:x[k]): print(*i,sep=' ')
