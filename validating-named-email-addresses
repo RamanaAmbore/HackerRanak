@@ -1,0 +1,12 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/validating-named-email-addresses/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+
+name = r'(.*)\s(?=[<])'
+email = r'([<][a-z][\w.-]*[@][a-z]+[.][a-z]{1,3}[>])'
+regx = re.compile("%s%s" %(name,email),flags=re.I)
+
+for _ in range(int(input())):
+    ln = re.match(regx,input())
+    if ln:print(*ln.groups(), sep=' ')
