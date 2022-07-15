@@ -1,0 +1,15 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/ginorts/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+def sort_seq(x):
+    if 'a' <= x <= 'z':
+        return (f'1{x}')
+    elif 'A' <= x <= 'Z':
+        return (f'2{x}') 
+    elif int(x)%2==1:
+        return (f'3{x}') 
+    elif int(x)%2==0:
+        return (f'4{x}')   
+    else:
+        return(f'9{x}')
+print(*sorted(input(),key=sort_seq),sep='')
