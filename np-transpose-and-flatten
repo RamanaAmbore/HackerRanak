@@ -1,0 +1,6 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/np-transpose-and-flatten/forum
+import numpy as np
+
+r,c = map(int,input().split())
+arr=np.array([input().split() for _ in range(r)],int)
+print(np.transpose(arr), arr.flatten(),sep='\n')
