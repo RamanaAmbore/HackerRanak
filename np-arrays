@@ -1,0 +1,4 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/np-arrays/problem
+    # complete this function
+    # use numpy.array
+    return numpy.array(arr,float)[::-1]
