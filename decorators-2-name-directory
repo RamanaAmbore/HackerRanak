@@ -1,0 +1,3 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/decorators-2-name-directory/problem
+        # complete the function
+        return map(f,sorted(people, key=lambda x:int(x[2])))
