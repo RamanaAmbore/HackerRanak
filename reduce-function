@@ -1,0 +1,3 @@
+ # HackerRank Problem link: https://www.hackerrank.com/challenges/reduce-function/problem
+ 
+ t = reduce(lambda x,y: x*y,fracs) # complete this line with a reduce statement
