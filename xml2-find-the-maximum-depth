@@ -1,0 +1,9 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/xml2-find-the-maximum-depth/problem
+
+    # your code goes here
+
+    if maxdepth == level :
+        maxdepth += 1
+         
+    for i in elem: 
+        depth(i,level+1)
