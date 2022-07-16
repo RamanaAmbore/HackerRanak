@@ -1,0 +1,3 @@
+ # HackerRank Problem link: https://www.hackerrank.com/challenges/standardize-mobile-number-using-decorators/problem
+        # complete the function
+        return f([f'+91 {i[-10:-5]} {i[-5:]}' for i in l])
