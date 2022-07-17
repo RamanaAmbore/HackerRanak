@@ -1,0 +1,8 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/hex-color-code/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+regx=r'(?<!^)([#](?:[\dA-Fa-f]{3}){1,2})'
+for _ in range(int(input())):
+    tkn = re.findall(regx,input())
+    if tkn: print(*tkn,sep='\n') 
