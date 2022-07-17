@@ -1,0 +1,5 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/np-linear-algebra/problem
+
+arr = numpy.array([input().split() for _ in range(int(input()))],float)
+numpy.set_printoptions(legacy='1.13') #important
+print(numpy.linalg.det(arr))
