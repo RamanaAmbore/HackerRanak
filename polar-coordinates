@@ -1,0 +1,6 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/polar-coordinates/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import cmath
+cmplx= complex(input())
+print(abs(cmplx),cmath.phase(cmplx),sep='\n')
