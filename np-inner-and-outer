@@ -1,0 +1,6 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/np-inner-and-outer/problem
+
+a=numpy.array([i for i in input().split()],int)
+b=numpy.array([i for i in input().split()],int)
+print(numpy.inner(a,b))
+print(numpy.outer(a,b))
