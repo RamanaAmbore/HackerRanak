@@ -1,0 +1,6 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/introduction-to-regex/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+regx=r'[+-]?\d*[.]\d+$'
+print(*[bool(re.match(regx,input())) for _ in range(int(input()))],sep='\n')
