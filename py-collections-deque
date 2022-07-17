@@ -1,0 +1,10 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/py-collections-deque/problem
+
+from collections import deque
+
+dq = deque()
+
+for _ in range(int(input())):
+    eval(('dq.'+input()+' )' ).replace(" ","(",1))
+
+print(*dq)
