@@ -1,0 +1,22 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/html-parser-part-1/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from html.parser import HTMLParser
+
+# create a subclass and override the handler methods
+class MyHTMLParser(HTMLParser):
+    def handle_starttag(self, tag, attrs):
+        print("Start :", tag)
+        for i,j in attrs:
+            print(f'-> {i} > {j}')
+    def handle_endtag(self, tag):
+        print ("End   :", tag)
+    def handle_startendtag(self, tag, attrs):
+        print ("Empty :", tag)
+        for i,j in attrs:
+            print(f'-> {i} > {j}')
+
+# instantiate the parser and fed it some HTML
+parser = MyHTMLParser()
+parser.feed('\n'.join([input() for _ in range(int(input()))]))
