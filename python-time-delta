@@ -1,0 +1,8 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/python-time-delta/problem
+
+from dateutil.parser import parse
+def time_delta(t1, t2):
+
+    dt0 = parse(t1)
+    dt1 = parse(t2)
+    return f'{abs((dt0-dt1).total_seconds()):.0f}'
