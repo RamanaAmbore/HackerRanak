@@ -1,0 +1,10 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/np-mean-var-and-std/problem
+
+import numpy as np
+
+n,_ = map(int,input().split())
+arr = np.array([list(input().split()) for _ in range(n)],dtype=int)
+
+print(np.mean(arr,axis=1))
+print(np.var(arr,axis=0))
+print(np.round(np.std(arr,axis=None),11))
