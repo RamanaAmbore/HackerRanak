@@ -1,0 +1,5 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/matrix-script/problem
+
+# add the code at the and of the existing code by HackerRank
+string = ''.join([''.join(x) for x in zip(*matrix)])
+print(re.sub('(?<=\w)[^\w]+(?=\w)', ' ',string))
