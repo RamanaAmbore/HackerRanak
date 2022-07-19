@@ -1,0 +1,15 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/piling-up/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+for i in range(int(input())):
+    _,lst = input(), list(map(int,input().split()))
+
+    pile = float('inf')
+    while lst:
+        num = lst.pop(0) if lst[0] > lst[-1] else lst.pop(-1)
+        if num > pile: 
+            print( "No")
+            break;
+        pile = num
+    else: print("Yes")
