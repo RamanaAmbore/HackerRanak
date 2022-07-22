@@ -1,0 +1,11 @@
+# HackerRank Problem link: https://www.hackerrank.com/challenges/hackerrank-language/problem
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+langs=r'C:CPP:JAVA:PYTHON:PERL:PHP:RUBY:CSHARP:HASKELL:CLOJURE:BASH:SCALA:ERLANG:CLISP:LUA:BRAINFUCK:JAVASCRIPT:GO:D:OCAML:R:PASCAL:SBCL:DART:GROOVY:OBJECTIVEC'
+langs=langs.replace(':','|')
+
+regx = '^[1-9]\d{4}\s(%s)$'%(langs)
+
+results=['VALID' if re.match(regx,input()) else 'INVALID' for _ in range(int(input()))]
+print(*results,sep='\n')
